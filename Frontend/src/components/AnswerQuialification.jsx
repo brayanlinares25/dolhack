@@ -21,7 +21,7 @@ function AnswerQuialification() {
                 Resp.map((Resp)=>(
                     <div key={Resp.idrespuesta} className="QuizList-Div">
                         <div>
-                            <Link to={'/class/main/qualification/'+ Resp.idestudiante + '/'+ Resp.idquiz}>{Resp.nombre}</Link>
+                            <Link to={'/class/main/qualification/'+ Resp.idestudiante + '/'+ Resp.idquiz}>{Resp.nombre} {Resp.apellido}</Link>
                         </div>
                         <p>{Resp.titulo}</p>
                     </div>

@@ -370,16 +370,16 @@ CREATE TABLE `reporte` (
   `idreporte` int(11) NOT NULL AUTO_INCREMENT,
   `estudiante_idestudiante` int(11) NOT NULL,
   `clase_idclase` int(11) NOT NULL,
-  `calificacion` int(3) DEFAULT NULL,
-  `respuesta_idrespuesta` int(11) NOT NULL,
+  `calificaciontotal` int(3) DEFAULT NULL,
+  `idquiz` int(11) NOT NULL,
   PRIMARY KEY (`idreporte`),
   UNIQUE KEY `idreporte_UNIQUE` (`idreporte`),
   KEY `fk_reporte_estudiante1_idx` (`estudiante_idestudiante`),
   KEY `fk_reporte_clase1_idx` (`clase_idclase`),
-  KEY `fk_reporte_respuesta1_idx` (`respuesta_idrespuesta`),
+  KEY `fk_quiz_quiz1_idx` (`idquiz`),
   CONSTRAINT `fk_reporte_clase1` FOREIGN KEY (`clase_idclase`) REFERENCES `clase` (`idclase`) ON UPDATE NO ACTION,
   CONSTRAINT `fk_reporte_estudiante1` FOREIGN KEY (`estudiante_idestudiante`) REFERENCES `estudiante` (`idestudiante`) ON UPDATE NO ACTION,
-  CONSTRAINT `fk_reporte_respuesta1` FOREIGN KEY (`respuesta_idrespuesta`) REFERENCES `respuesta` (`idrespuesta`)  ON UPDATE NO ACTION
+  CONSTRAINT `fk_quiz_quiz1` FOREIGN KEY (`idquiz`) REFERENCES `quiz` (`idquiz`)  ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -402,6 +402,7 @@ DROP TABLE IF EXISTS `respuesta`;
 CREATE TABLE `respuesta` (
   `idrespuesta` int(11) NOT NULL AUTO_INCREMENT,
   `respuesta` text NOT NULL,
+  `calificación` varchar(224),
   `pregunta_idpregunta` int(11) NOT NULL,
   `estudiante_idestudiante` int(11) NOT NULL,
   PRIMARY KEY (`idrespuesta`),
@@ -432,7 +433,7 @@ DROP TABLE IF EXISTS `telefono`;
 CREATE TABLE `telefono` (
   `idtelefono` int(11) NOT NULL AUTO_INCREMENT,
   `idusuario` int(11) NOT NULL,
-  `numero` int(11) DEFAULT NULL,
+  `numero` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`idtelefono`),
   UNIQUE KEY `idtelefono_UNIQUE` (`idtelefono`),
   FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`idusuario`)

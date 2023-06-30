@@ -28,6 +28,7 @@ import Mod from '../page/Class/ModEditorQuiz.jsx'
 import QuizEditor from '../page/Class/QuizEditor.jsx'
 import ProfileUP from '../page/User/upProfile.jsx'
 import InfoUser from '../page/User/infUser.jsx'
+import QuizMyCuialification from '../page/Class/QuizMyQuialification.jsx';
 
 function Home(){
     return(
@@ -61,6 +62,7 @@ function Home(){
             <Route path='/main/user/profile' element={<Profile />} />
             <Route path='/main/user/profile/update' element={<ProfileUP />} />
             <Route path='/studen/:id' element={<InfoUser />} />
+            <Route path='/class/main/myqualification' element={<QuizMyCuialification />} />
         </Routes>
     )
 }

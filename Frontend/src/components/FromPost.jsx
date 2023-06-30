@@ -76,11 +76,11 @@ function FromPost() {
         <h1 style={{marginBottom: '20px'}}>Publicar</h1>
             <form onSubmit={Hangle}>
                 <div style={{marginBottom: '20px'}}>
-                    <label>titulo</label>
+                    <label>Asunto</label>
                     <input type="text" name='titulo' required onChange={changer}/>
                 </div>
                 <div style={{marginBottom: '35px'}} className="TextAreaPost">
-                    <label>descripción</label>
+                    <label>Mensaje</label>
                     <textarea name="descripcion" id="" cols="30" rows="10" onChange={changer}></textarea>
                 </div>
                 <div className="Imag_Post">

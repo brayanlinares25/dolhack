@@ -15,6 +15,15 @@ function NavigateClass(){
         Navigate('/main/user');
     }
 
+    async function calift(){
+        const {data} = await VerificRol();
+        if(data[0] === 'profesor'){
+            Navigate('/class/main/qualification');
+        } else{
+            Navigate('/class/main/myqualification');
+        }
+    }
+
     async function setting(){
         const {data} = await VerificRol();
         if(data[0] === 'profesor'){
@@ -36,7 +45,7 @@ function NavigateClass(){
                        <ul><Link to={'/class/main'}>Bandeja</Link></ul>
                        {/*<ul><a href="#">Trabajos</a></ul>*/}
                        <ul><Link to={'/class/main/quiz'}>Quiz</Link></ul>
-                       <ul><Link to={'/class/main/qualification'}>Calificaciónes</Link></ul>
+                       <ul><Link onClick={()=>calift()} >Calificaciónes</Link></ul>
                     </nav>
                 <h2 className="Ajustes-Crud" onClick={()=> setting()}>Ajustes</h2>
             </header>

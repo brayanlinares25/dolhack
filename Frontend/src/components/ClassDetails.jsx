@@ -25,7 +25,7 @@ function ClassDetails(){
             const result = await enrollclass(id);
             console.log(result.data);
             toast(result.data,{
-                type: "error",
+                type: "success",
                 theme: "dark",
                 position: "bottom-right"
             })
