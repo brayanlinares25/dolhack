@@ -1,0 +1,105 @@
+.UpProfile_DIV{
+    display: flex;
+    padding: 20px;
+    border: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    background-color: var(--BG2_color);
+}
+.UpProfile_DIV h2{
+    margin-bottom: 10px;
+}
+.UpProfile_DIV form{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.UpProfile_Input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.UpProfile_Input label{
+    margin-bottom: 8px;
+    color: var(--Text_Color);
+}
+.UpProfile_Input input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: var(--BG_Color);
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--Main_Color);
+    color: var(--Text_Color);
+    margin-bottom: 8px;
+}
+.UpProfile_Text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.UpProfile_Text label{
+    margin-bottom: 8px;
+    color: var(--Text_Color);
+}
+.UpProfile_Text textarea{
+    margin-bottom: 8px;
+    padding: 10px;
+    height: 180px;
+    background-color: var(--BG_Color);
+    color: var(--Text_Color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 2px solid var(--Main_Color);
+    border-right: 1px solid var(--Main_Color);
+    border-left: 1px solid var(--Main_Color);
+}
+.UpProfile_Button{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.UpProfile_Button button{
+    padding: 10px 13px 10px 13px;
+    background-color: var(--Main_Color);
+    border: none;
+    border-radius: 5px;
+    color: var(--Text_Color);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.UpProfile_Button button:hover{
+    box-shadow: 0 0 10px #272727;
+    transform: scale(1.1);
+}
+.UpProfile_Img{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--BG_Color);
+    height: 120px;
+    border-radius: 5px;
+    border: 2px solid var(--Main_Color);
+    align-items: center;
+    justify-content: center;
+}
+.UpProfile_Img label{
+    position: absolute;
+    color: var(--Text_Color);
+    margin-bottom: 10px;
+}
+.UpProfile_File{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+.UpProfile_File:valid .UpProfile_Img label{
+    color: var(--Main_Color);
+}

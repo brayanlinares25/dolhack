@@ -1,0 +1,26 @@
+.MainQuiz-Div{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    width: 25%;
+    border: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--Main_Color);
+    flex-direction: column;
+    word-wrap: break-word;
+    text-align: center;
+}
+.MainQuiz-Div h2{
+    margin-bottom: 10px;
+}
+.MainQuiz-Div button{
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Main_Color);
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    color: var(--Text_Color);
+    transition: .5s ease;
+}
+.MainQuiz-Div button:hover{
+    transform: scale(1.1);
+}

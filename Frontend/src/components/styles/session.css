@@ -1,0 +1,11 @@
+.z{
+    margin-bottom: 40px;
+    font-size: 2.2em;
+}
+.Session-Home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}

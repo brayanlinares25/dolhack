@@ -1,0 +1,97 @@
+/*
+/   TitleDescripcion1
+*/
+
+.TitleDescripcion1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin-bottom: 10px;
+    height: 150px;
+    color: var(--Text_Color);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+.TitleDescripcion1 p{
+    color: var(--Text_Color);
+    font-size: 1.3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.TitleDescripcion1 h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.8em;
+    color: var(--Main_Color);
+    text-shadow: 0 0 5px var(--Main_Color);
+}
+
+
+/*
+/   TitleDescripcion2
+*/
+
+.TitleDescripcion2{
+    display: flex;
+    height: 350px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.ConterTyD{
+    display: flex;
+    margin-bottom: 35px;
+    background: #000;
+    border: 3px solid var(--Main_Color);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 13px var(--Main_Color), inset 0 0 10px var(--Main_Color);   
+}
+.ConterTyD h1{
+    color: var(--Main_Color);
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: translateY(2px);
+    text-shadow: 0 0 5px var(--Main_Color);
+}
+.TitleyDescrip2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(20px);
+    width: 200px;
+}
+.Title2{
+    display: flex;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90px;
+}
+.Line{
+    width: 250px;
+    border-bottom: 2px solid var(--Main_Color);
+    transform: translateY(15px);
+}
+.Title2 h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.8em;
+    color: var(--Text_Color);
+}
+.Descrip2{
+    display: flex;
+    height: 80px;
+    width: 101vh;
+    align-items: center;
+    justify-content: center;
+}
+.Descrip2 p{
+    color: var(--Text_Color);
+    font-size: 1.3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

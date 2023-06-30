@@ -1,0 +1,75 @@
+.Render-UpdateClass{
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+}
+.UpdateClass{
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    background-color: var(--BG2_color);
+    border-radius: 10px;
+    border: 2px solid var(--Main_Color);
+    transition: .5s;
+}
+.UpdateClass:hover{
+    box-shadow: 0 0 20px var(--Main_Color);
+}
+.Form-UpClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.Form-UpClass h2{
+    text-align: center;
+}
+.Button-UpdateClass{
+    display: flex;
+    margin: 5px 50px;
+    justify-content: space-between;
+}
+.Button-UpdateClass button{
+    padding: 10px 20px;
+    color: var(--Text_Color);
+    background-color: var(--Main_Color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Eliminar{
+    background-color: brown;
+}
+.Contener-UpClass{
+    display: flex;
+    flex-direction: column;
+}
+.Contener-UpClass label{
+    margin-bottom: 5px;
+    color: var(--Text_Color);
+}
+.Contener-UpClass input{
+    height: 35px;
+    background-color: var(--BG_Color);
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--Main_Color);
+    margin-bottom: 5px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--Text_Color);
+    font-size: 1em;
+}
+.Contener-UpClass textarea{
+    resize: none;
+    background-color: var(--BG_Color);
+    height: 180px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--Main_Color);
+    border-right: 2px solid var(--Main_Color);
+    outline: none;
+    padding: 10px;
+    color: var(--Text_Color);
+}

@@ -1,0 +1,212 @@
+.Backgrund-CreateClass{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /*
+    background: url('../assets/presentacion1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    */
+    background: var(--BG2_color);
+}
+.NewClass{
+    position: relative;
+    width: 680px;
+    height: 610px;
+    right: 0;
+}
+
+.FormClass{
+    padding: 35px 45px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 20px;
+    transition: .5s;
+}
+.FormClass:hover{
+    border: 2px solid var(--Main_Color);
+    box-shadow: 0 0 30px var(--Main_Color);
+}
+.Div-Input{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--Main_Color);
+}
+.Div-Input label{
+    position: absolute;
+    top: 20%;
+    left: 55px;
+    transform: translateY(-45%);
+    font-size: 1.2em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    color: var(--Main_Color);
+}
+
+.Div-Input input{
+    width: 100%;
+    height: 100%;
+    background: var(--BG_Color);
+    border-radius: 10px 10px 0 0;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: var(--Text_Color);
+    padding: 0 35px 0 5px;
+}
+
+.Div-Input input:focus~label,
+.Div-Input input:valid~label {
+    color: var(--Text_Color);
+    top: 13%;
+    transform: translateY(-10%);
+    font-size: 1em;
+}
+
+.Div-Texarea{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+}
+
+.Div-Texarea textarea{
+    padding: 15px 20px 20px 15px;
+    resize: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: var(--BG_Color);
+    color: var(--Text_Color);
+    font-size: 1em;
+    border-bottom: 2px solid var(--Main_Color) ;
+}
+.Div-Texarea label{
+    position: absolute;
+    top: 30%;
+    left: 61px;
+    color: var(--Main_Color);
+    transform: translateY(5%);
+    font-size: 1.2em;
+    transition: .5s;
+}
+.Div-Texarea textarea:focus~label,
+.Div-Texarea textarea:valid~label{
+    color: var(--Text_Color);
+    top: 25%;
+    left: 48px ;
+    font-size: 1em;
+    transform: translateY(18%);
+}
+
+.Div-Input2{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--Main_Color);
+}
+.Div-Input2 label{
+    position: absolute;
+    top: 54%;
+    left: 55px;
+    transform: translateY(-40%);
+    font-size: 1.2em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    color: var(--Main_Color);
+}
+
+.Div-Input2 input{
+    width: 100%;
+    height: 100%;
+    background: var(--BG_Color);
+    border-radius: 10px 10px 0 0;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: var(--Text_Color);
+    padding: 0 35px 0 5px;
+}
+
+.Div-Input2 input:focus~label,
+.Div-Input2 input:valid~label {
+    color: var(--Text_Color);
+    top: 48%;
+    transform: translateY(-25%);
+    font-size: 1em;
+}
+.Div-Input3{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid var(--Main_Color);
+}
+.Div-Input3 label{
+    position: absolute;
+    top: 67%;
+    left: 55px;
+    transform: translateY(-40%);
+    font-size: 1.2em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    color: var(--Main_Color);
+}
+
+.Div-Input3 input{
+    width: 100%;
+    height: 100%;
+    background: var(--BG_Color);
+    border-radius: 10px 10px 0 0;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: var(--Text_Color);
+    padding: 0 35px 0 5px;
+}
+
+.Div-Input3 input:focus~label,
+.Div-Input3 input:valid~label {
+    color: var(--Text_Color);
+    top: 62%;
+    transform: translateY(-50%);
+    font-size: 1em;
+}
+
+.FormClass button{
+    position: absolute;
+    top: 36px;
+    right: 50px;
+    background: var(--Main_Color);
+    padding: 5px 20px 5px 20px;
+    border-radius: 5px;
+    border: none;
+    color: var(--Text_Color);   
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.FormClass button:hover{
+    border: 2px solid var(--Main_Color);
+    background: #000;
+}
+
+.Div-Nivel{
+    margin-top: 10px;
+}
+.Div-Nivel label{
+    margin-left: 5px;
+    margin-right: 15px;
+    color: var(--Text_Color);
+}
+.Div-Nivel h3{
+    margin-bottom: 10px;
+    color: var(--Main_Color);
+}

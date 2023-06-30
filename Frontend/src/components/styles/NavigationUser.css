@@ -1,0 +1,55 @@
+.headerUser a{
+    text-decoration: none;
+}
+.Banner input{
+    display: flex;
+    font-size: 1em;
+    outline: none;
+    background-color: var(--BG_Color);
+    color: var(--Text_Color);
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease;
+}
+.Banner input:focus{
+    width: 300px;
+}
+
+.Profesorbeta{
+    transform: translateX(-123px);
+}
+.ProfileNav:hover .FolterM{
+    padding: 5px;
+    height: 70px;
+    width: 120px;
+}
+.FolterM{
+    padding:0;
+    height:0;
+    width: 120px;
+    margin-top: 18px;
+    position: absolute;
+    display: flex;
+    background-color: var(--BG2_color);
+    flex-direction: column;
+    transform: translateX(-28px);
+    border-bottom: 2px solid var(--Main_Color);
+    border-right: 2px solid var(--Main_Color);
+    border-left: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.FolterM a{
+    margin-bottom: 10px;
+    color: var(--Text_Color);
+}
+.FolterM a:hover{
+    color: var(--Main_Color);
+}

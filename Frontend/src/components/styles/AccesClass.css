@@ -1,0 +1,46 @@
+.Backgrund-AccesClass{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /*
+    background: url('../assets/presentacion1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    */
+}
+.Acces-Class{
+    display: flex;
+    padding: 20px;
+    background-color: var(--BG2_color);
+    flex-direction: column;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid var(--Main_Color);
+    transition: .5s;
+}
+.Acces-Class:hover{
+    box-shadow: 0 0 20px var(--Main_Color);
+}
+.Acces-Class h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.Acces-Class p{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.Acces-Class button{
+    padding: 8px 15px 8px 15px;
+    font-size: 1em;
+    background-color: var(--Main_Color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--Text_Color);
+    transition: .5s;
+}
+.Acces-Class button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px var(--Main_Color);
+}

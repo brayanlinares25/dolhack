@@ -1,0 +1,77 @@
+.ContenerDetails{
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+}
+.DetailsInfo{
+    background-color: var(--BG2_color);
+    padding: 20px 20px 20px 20px;
+    width: 50%;
+    height: 90%;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    text-align: left;
+    word-wrap: break-word;
+    transition: 1s;
+    overflow: hidden;
+}
+.DetailsInfo:hover{
+    border: 2px solid var(--Main_Color);
+    box-shadow: 0 0 30px var(--Main_Color);
+}
+.OrgDetails{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+.HeaderInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.HeaderInfo h1{
+    transition: 1s;
+    cursor: pointer;
+}
+.DetailsInfo:hover h1{
+    color: var(--Main_Color);
+}
+.DetailsInfo:hover h2{
+    text-shadow: 0 0 3px;
+}
+.DetailsInfo div{
+    margin-bottom: 25px;
+}
+.ClassType p{
+    margin-left: 20px;
+    color: var(--Main_Color);
+    text-shadow: 0 0 10px var(--Main_Color);
+    cursor: pointer;
+    transition: 1s;
+}
+.ClassType p:hover{
+    font-size: 1.1em;
+}
+.DetailsInfo button{
+    padding: 10px 10px 10px 10px;
+    background-color: var(--Main_Color);
+    border: none;
+    border-radius: 5px;
+    color: var(--Text_Color);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: .5s;
+}
+.DetailsInfo button:hover{
+    border: 1px solid var(--Main_Color);
+    background-color: #000;
+}
+.ButtonInscrip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

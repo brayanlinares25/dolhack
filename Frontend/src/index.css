@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --BG_Color: #282c36;
+    --BG2_color: #323946;
+    --Text_Color: #fff;
+    --Main_Color: #05a6e8;
+}
+body{
+    min-height: 100vh;
+    background: var(--BG_Color);
+}
+h1{
+    color: var(--Text_Color);
+}
+h2{
+    color: var(--Text_Color);
+}
+h3{
+    color: var(--Text_Color);
+}
+h4{
+    color: var(--Text_Color);
+}
+h5{
+    color: var(--Text_Color);
+}
+h6{
+    color: var(--Text_Color);
+}
+p{
+    color: var(--Text_Color);
+}

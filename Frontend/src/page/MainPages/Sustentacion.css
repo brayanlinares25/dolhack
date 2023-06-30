@@ -1,0 +1,45 @@
+.Sustentacion-div{
+    display: flex;
+    justify-content: center;
+}
+.Sustentacion{
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+    background-color: var(--BG2_color);
+    border: 2px solid var(--Main_Color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--Main_Color);
+}
+.Sustentacion h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Sustentacion h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Sustentacion a{
+    text-decoration: none;
+    color: var(--Main_Color);
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Sustentacion img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--Main_Color);
+    height: 430px;
+    width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--Main_Color);
+}
+.Sustentacion button{
+    padding: 10px 20px 10px 20px;
+    background-color: var(--Main_Color);
+    border: none;
+    border-radius: 5px;
+    color: var(--Text_Color);
+    cursor: pointer;
+}

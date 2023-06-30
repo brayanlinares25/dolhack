@@ -1,0 +1,33 @@
+.QuizList-Div{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--BG_Color);
+    border: 2px solid var(--Main_Color);
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--Main_Color);
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.QuizList-Div:hover{
+    box-shadow: 0 0 20px var(--Main_Color);
+    transform: scale(1.01);
+}
+.QuizList-Div div{
+    display: flex;
+    justify-content: space-between;
+}
+.QuizList-Div a{
+    color: var(--Text_Color);
+    text-shadow: 0 0 5px var(--Text_Color);
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: .5s;
+    margin-bottom: 5px;
+}
+.QuizList-Div a:hover{
+    font-size: 1.6em;
+}
+.QuizList-Div h5{
+    color: var(--Main_Color);
+    font-size: 1.2em;
+}

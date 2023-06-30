@@ -1,0 +1,31 @@
+.QuizEdit_list{
+    display: flex;
+    padding: 10px;
+    background-color: var(--BG2_color);
+    border: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--Main_Color);
+    justify-content: space-between;
+}
+.QuizEdit_list h2{
+    margin-bottom: 5px;
+}
+.Button_QuizEdit_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Button_QuizEdit_list button{
+    padding: 8px 15px 8px 15px;
+    font-size: 1em;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Main_Color);
+    color: var(--Text_Color);
+    transition: .5s ease-in-out;
+}
+.Button_QuizEdit_list button:hover{
+    transform: scale(1.1);
+}

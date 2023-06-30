@@ -1,0 +1,15 @@
+footer{
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--BG_Color);
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--Main_Color);
+    z-index: 1000;
+}
+footer h6{
+    font-size: 1em;
+}

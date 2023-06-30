@@ -1,0 +1,14 @@
+.JobsList{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    width: 25%;
+    border: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--Main_Color);
+    flex-direction: column;
+    word-wrap: break-word;
+    text-align: left;
+}
+.JobsList samp{
+    color: var(--Main_Color);
+}

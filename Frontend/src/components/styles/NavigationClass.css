@@ -1,0 +1,36 @@
+.NavClass{
+    position: static;
+    height: 70px;
+    opacity: 1;
+}
+.NavClass nav{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.NavClass ul{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 50px 10px 50px;
+    border: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    background-color: var(--BG_Color);
+    box-shadow: 0 0 5px var(--Main_Color);
+    transition: .5s ease;
+}
+.NavClass ul:hover{
+    background-color: black;
+}
+.NavClass a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+}
+.NavClass h1{
+    font-size: 2em;
+    cursor: pointer;
+}
+.Ajustes-Crud{
+    cursor: pointer;
+}

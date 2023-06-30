@@ -1,0 +1,26 @@
+.Button1 a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.ButtonDefault{
+    padding: 2px;
+    background: var(--Main_Color);
+    height: 50px;
+    width: 130px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-size: 1.2em;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.ButtonDefault:hover{
+    background: #0D0D0D;
+    color: var(--Text_Color);
+    border: 2px solid var(--Main_Color);
+}

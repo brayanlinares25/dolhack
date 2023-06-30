@@ -1,0 +1,9 @@
+.ContenerClass{
+    display: flex;
+    margin: 20px 20px 20px 20px;
+    width: 98%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    overflow: hidden;
+}

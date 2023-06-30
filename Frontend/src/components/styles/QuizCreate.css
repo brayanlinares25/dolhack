@@ -1,0 +1,59 @@
+.QuizCreate-Div{
+    padding: 20px;
+    background-color: var(--BG_Color);
+    width: 500px;
+    height: 500px;
+    border: 2px solid var(--Main_Color);
+    border-radius: 8px;
+    transition: .5s ease;
+}
+.QuizCreate-Div:hover{
+    box-shadow: 0 0 30px var(--Main_Color);
+}
+.QuizCreate-Div div{
+    display: flex;
+    flex-direction: column;
+}
+.QuizCreate-Div label{
+    margin-bottom: 5px;
+    color: var(--Text_Color);
+}
+.QuizCreate-Div input{
+    height: 35px;
+    background-color: var(--BG2_color);
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--Main_Color);
+    margin-bottom: 5px;
+    outline: none;
+    padding-left: 10px;
+    color: var(--Text_Color);
+    font-size: 1em;
+}
+.QuizCreate-Div textarea{
+    resize: none;
+    background-color: var(--BG2_color);
+    height: 174px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 2px solid var(--Main_Color);
+    border-right: 2px solid var(--Main_Color);
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--Text_Color);
+}
+.QuizCreate-Button{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.QuizCreate-Button button{
+    padding: 10px 15px 10px 15px;
+    color: var(--Text_Color);
+    background-color: var(--Main_Color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.ContenerOfTray{
+    display: flex;
+    width: 50%;
+    flex-direction: column-reverse;
+}
+.TrayClass{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 2px solid var(--Main_Color);
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--Main_Color);
+    justify-content: center;
+    flex-direction: column;
+    word-wrap: break-word;
+    text-align: left;
+}
+.renderTray{
+    display: flex;
+    justify-content: space-between;
+}
+.renderTray div{
+    display: flex;
+    justify-content: center;
+    height: 28px;
+}
+.renderTray img{
+    transform: translateY(-28px);
+    height: 35px;
+}
+.TrayH5{
+    margin-left: 5px;
+}
+.TrayClass img{
+    margin-top: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,18 @@
+.Imag_Post{
+    display: flex;
+    padding: 10px;
+    background-color: var(--BG2_color);
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 2px solid var(--Main_Color);
+    border-radius: 6px;
+}
+.Imag_Post input{
+    background-color: transparent;
+    border: transparent;
+}
+.TextAreaPost textarea{
+    height: 100px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,89 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 20px 50px;
+    background: var(--BG2_color);
+    border-bottom: 2px solid var(--Main_Color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    opacity: 0.8;
+    transition: ease .5s;
+}
+header:hover{
+    opacity: 1;
+    backdrop-filter: blur(20px);
+}
+.Banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Dlogo{
+    transform: translateY(-2px);
+    width: 5vh;
+    height: 5vh;
+}
+.Dlogo img{
+    width: 100%;
+    height: 100%;
+}
+.Logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.0em;
+    cursor: pointer;
+    color: var(--Text_Color);
+}
+.Navigation-Home{
+    transform: translateX(-30px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Navigation-Home a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 1.1em;
+    color: var(--Text_Color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.Navigation-Home a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: var(--Main_Color);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.Navigation-Home a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.Button-Login{
+    background: var(--Main_Color);
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: 0.5s;
+    color: var(--Text_Color);
+}
+.Button-Login:hover{
+    background: #0D0D0D;
+    color: var(--Text_Color);
+    border: 2px solid var(--Main_Color);
+}
