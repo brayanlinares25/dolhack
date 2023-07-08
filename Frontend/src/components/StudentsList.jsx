@@ -4,6 +4,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { FaDownload } from "react-icons/fa";
 import { useEffect } from "react";
 import {list} from "../api/class";
+import { VerificRol } from "../api/auth";
 import * as XLSX from 'xlsx';
 import { saveAs } from 'file-saver';
 import {useNavigate} from "react-router-dom"
@@ -14,8 +15,11 @@ function StudentsList(){
 
     const [List, setList] = useState([]);
 
+    const [Auth, setAuth] = useState('');
+
     useEffect(()=>{
         GetList();
+        VerificAuth();
     },[]);
 
     async function GetList(){
@@ -38,6 +42,11 @@ function StudentsList(){
         saveAs(excelBlob, 'lista.xlsx');
     };
 
+    const VerificAuth = async () => {
+        const {data} = await VerificRol();
+        setAuth(data[0]);
+    }
+
     return(
         <div className="List">
             <h2>Estudiantes</h2>
@@ -46,9 +55,9 @@ function StudentsList(){
                     <p style={{cursor:"pointer"}} onClick={()=>Navegate('/studen/'+List.idestudiante)} key={i}><samp><AiOutlineUser /></samp> {List.nombre} {List.apellido} -</p>
                 ))
             }
-            <div>
-                <button onClick={()=>downloadExcelFile(List)} ><FaDownload /></button>
-            </div>
+            {
+                Auth === 'profesor' ? <div> <button onClick={()=>downloadExcelFile(List)}><FaDownload /> Descargar</button> </div> : null
+            }
         </div>
     )
 }
